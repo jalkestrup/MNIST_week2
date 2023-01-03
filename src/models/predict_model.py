@@ -1,17 +1,17 @@
-import torch
-from torch import nn
-from torch.utils.data import DataLoader, TensorDataset
 import click
-import matplotlib.pyplot as plt
+import torch
 from model import ConvNet
+from torch.utils.data import DataLoader, TensorDataset
 
 
 @click.group()
 def cli():
     pass
 
+
 # Datapath
-main_path = 'data/processed'
+main_path = "data/processed"
+
 
 @click.command()
 @click.argument("model_checkpoint")
@@ -21,11 +21,11 @@ def evaluate(model_checkpoint):
 
     # TODO: Implement evaluation logic here
     model = ConvNet()
-    state_dict = torch.load(f'{model_checkpoint}')
+    state_dict = torch.load(f"{model_checkpoint}")
     model.load_state_dict(state_dict)
-    images = torch.unsqueeze( torch.load(f'{main_path}/test_images.pt'), dim=1)
-    labels = torch.load(f'{main_path}/test_labels.pt')
-    test = TensorDataset(images,labels)
+    images = torch.unsqueeze(torch.load(f"{main_path}/test_images.pt"), dim=1)
+    labels = torch.load(f"{main_path}/test_labels.pt")
+    test = TensorDataset(images, labels)
     test_set = DataLoader(test, batch_size=8, shuffle=True)
 
     with torch.no_grad():
@@ -35,8 +35,8 @@ def evaluate(model_checkpoint):
             top_p, top_class = log_ps.topk(1, dim=1)
             equals = top_class == labels.view(*top_class.shape)
             accuracy += torch.mean(equals.type(torch.FloatTensor))
-        
-        print(f'Accuracy: {accuracy.item()*100/len(test_set)}%')
+
+        print(f"Accuracy: {accuracy.item()*100/len(test_set)}%")
 
 
 cli.add_command(evaluate)
