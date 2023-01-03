@@ -18,5 +18,6 @@ class ConvNet(nn.Module):
         x = x.view(-1, 32 * 5 * 5)            # -> n, 400
         x = F.relu(self.fc1(x))               # -> n, 120
         x = F.relu(self.fc2(x))               # -> n, 84
+        self.penult_layer = x
         x = self.fc3(x)                       # -> n, 10
         return x
