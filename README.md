@@ -50,6 +50,16 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    │
+    │
+    └── predict.dockerfile        <- Dockerfile for running testmodels run like:
+
+
+Run experiment like:
+>   docker run --name predict --rm \
+>   -v $(pwd)/models/cnn_checkpoint.pth:/models/cnn_checkpoint.pth \
+>   -v $(pwd)/data/:/data/ \
+>   predict:latest models/cnn_checkpoint.pth
 
 
 --------
