@@ -49,13 +49,17 @@ Project Organization
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    ├── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
     │
     │
-    └── predict.dockerfile        <- Dockerfile for running testmodels run like:
+    └── predict.dockerfile        <- Dockerfile for running testmodels
 
 
-Run experiment like:
+
+Run train eperiment like:
+>   docker run --name experiment{experiment_number} -v $(pwd)/models:/models/ trainer:latest
+
+Run prediction experiment like:
 >   docker run --name predict --rm \
 >   -v $(pwd)/models/cnn_checkpoint.pth:/models/cnn_checkpoint.pth \
 >   -v $(pwd)/data/:/data/ \
