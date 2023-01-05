@@ -1,0 +1,8 @@
+# @package _group_
+datapath: '../../../data/processed'
+modelpath: '../../../models'
+reportspath: '../../../reports'
+batch_size: 16
+lr: 0.001
+n_epochs: 10
+seed: 123

@@ -1,0 +1,21 @@
+[2023-01-04 23:00:31,527][__main__][INFO] - configuration: 
+ experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  lr: 0.001
+  n_epochs: 10
+  seed: 123
+
+[2023-01-04 23:00:31,527][__main__][INFO] - Training day and night
+[2023-01-04 23:00:38,917][__main__][INFO] - Epoch [1/10], Loss: 0.2385
+[2023-01-04 23:00:46,791][__main__][INFO] - Epoch [2/10], Loss: 0.0878
+[2023-01-04 23:00:54,564][__main__][INFO] - Epoch [3/10], Loss: 0.0596
+[2023-01-04 23:01:02,331][__main__][INFO] - Epoch [4/10], Loss: 0.0440
+[2023-01-04 23:01:10,101][__main__][INFO] - Epoch [5/10], Loss: 0.0355
+[2023-01-04 23:01:17,918][__main__][INFO] - Epoch [6/10], Loss: 0.0269
+[2023-01-04 23:01:25,712][__main__][INFO] - Epoch [7/10], Loss: 0.0255
+[2023-01-04 23:01:33,649][__main__][INFO] - Epoch [8/10], Loss: 0.0221
+[2023-01-04 23:01:41,585][__main__][INFO] - Epoch [9/10], Loss: 0.0185
+[2023-01-04 23:01:49,449][__main__][INFO] - Epoch [10/10], Loss: 0.0171

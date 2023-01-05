@@ -1,0 +1,11 @@
+[2023-01-04 23:00:09,438][__main__][INFO] - configuration: 
+ experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  br: 0.001
+  n_epochs: 10
+  seed: 123
+
+[2023-01-04 23:00:09,438][__main__][INFO] - Training day and night
