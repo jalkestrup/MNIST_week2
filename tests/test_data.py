@@ -2,7 +2,6 @@ import numpy as np
 import torch
 from tests import _PATH_DATA
 import pytest
-import os
 
 train_images = torch.load(f"{_PATH_DATA}/processed/train_images.pt")
 train_labels = torch.load(f"{_PATH_DATA}/processed/train_labels.pt")
