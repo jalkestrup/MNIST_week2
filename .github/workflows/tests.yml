@@ -24,12 +24,14 @@ jobs:
       with:
         python-version: 3.9
 
+
     - uses: iterative/setup-dvc@v1
     
     - name: Get data
       run: dvc pull
       env:
-        GDRIVE_CREDENTIALS_DATA: $
+        GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+
 
     - name: Get pip cache dir
       id: pip-cache
