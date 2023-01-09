@@ -17,7 +17,7 @@ main_path = "data/processed"
 
 @click.command()
 @click.option("--lr", default=1e-3, help="learning rate to use for training")
-@click.option("--epochs", default=5, help="learning rate to use for training")
+@click.option("--epochs", default=2, help="learning rate to use for training")
 def train(lr, epochs):
     print("Training day and night")
     print(lr)
