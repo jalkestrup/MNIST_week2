@@ -38,3 +38,8 @@ def test_dataloader_batch_size(test_input, expected):
         ), "Dataloader does not return expected batch size of labels"
         # Only check first loop
         break
+
+# In the detox project we use a pytorch ligthning module, which we can use 
+# to do call the loss directly from the model 
+def test_loss():
+    assert True

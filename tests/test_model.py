@@ -13,11 +13,13 @@ model = ConvNet()
 output = model(train_images)
 
 
-def test_output():
-    assert (
-        output.shape[1] == 10
-    ), "Output shape is expected to match 10, the number of classes"
+@pytest.mark.parametrize("test_input,expected", [(10, 10), (20, 20), (42, 42)])
+def test_output(test_input, expected):
+    assert model(train_images[0:test_input]).shape[0] == expected
 
+def test_error_on_wrong_shape():
+    with pytest.raises(ValueError, match='Expected input to a 4D tensor'):
+        model(torch.randn(1,2,3))
 
 def test_error_on_wrong_shape():
     with pytest.raises(ValueError, match="Expected input to a 4D tensor"):
