@@ -43,7 +43,6 @@ def train(lr, epochs):
             # Forward pass
             outputs = model(images)
             loss = criterion(outputs, torch.flatten(labels))
-
             # Backward and optimize
             optimizer.zero_grad()
             loss.backward()
