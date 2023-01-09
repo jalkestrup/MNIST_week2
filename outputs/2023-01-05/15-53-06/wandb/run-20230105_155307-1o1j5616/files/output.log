@@ -1,0 +1,21 @@
+[2023-01-05 15:53:11,082][__main__][INFO] - configuration:
+ experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  lr: 0.001
+  n_epochs: 10
+  seed: 123
+wandb:
+  project: oldboys_mnist
+  name: run1
+[2023-01-05 15:53:11,082][__main__][INFO] - Training day and night
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 32, in train
+    images = torch.unsqueeze(torch.load(f"{wandb.config['datapath']}/train_images.pt"), dim=1)
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/wandb/sdk/wandb_config.py", line 133, in __getitem__
+    return self._items[key]
+KeyError: 'datapath'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

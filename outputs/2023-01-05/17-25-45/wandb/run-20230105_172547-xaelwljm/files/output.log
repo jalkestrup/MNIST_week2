@@ -1,0 +1,11 @@
+Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 1, 'seed': 123}
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 91, in train
+    print(nn.Softmax(log_ps).numpy())
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1269, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'Softmax' object has no attribute 'numpy'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Epoch: [1/1], Loss: 0.2545

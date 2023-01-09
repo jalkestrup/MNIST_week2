@@ -1,0 +1,11 @@
+experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  lr: 0.001
+  n_epochs: 1
+  seed: 123
+wandb:
+  project: oldboys_mnist
+  name: run4

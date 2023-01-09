@@ -1,2 +1,3 @@
 defaults:
     - experiment: exp1
+    - wandb: wandb1

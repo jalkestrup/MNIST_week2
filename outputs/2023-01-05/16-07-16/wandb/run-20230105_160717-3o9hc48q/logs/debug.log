@@ -1,0 +1,26 @@
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_setup.py:_flush():68] Configure stats pid to 85518
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_setup.py:_flush():68] Loading settings from /Users/danielsvendsen/.config/wandb/settings
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_setup.py:_flush():68] Loading settings from /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/16-07-16/wandb/settings
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/models/train_model_wandb.py', 'program': '/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py'}
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_init.py:_log_setup():476] Logging user logs to /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/16-07-16/wandb/run-20230105_160717-3o9hc48q/logs/debug.log
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_init.py:_log_setup():477] Logging internal logs to /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/16-07-16/wandb/run-20230105_160717-3o9hc48q/logs/debug-internal.log
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_init.py:init():516] calling init triggers
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_init.py:init():569] starting backend
+2023-01-05 16:07:17,308 INFO    MainThread:85518 [wandb_init.py:init():573] setting up manager
+2023-01-05 16:07:17,315 INFO    MainThread:85518 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-01-05 16:07:17,317 INFO    MainThread:85518 [wandb_init.py:init():580] backend started and connected
+2023-01-05 16:07:17,320 INFO    MainThread:85518 [wandb_init.py:init():658] updated telemetry
+2023-01-05 16:07:17,338 INFO    MainThread:85518 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-01-05 16:07:18,009 INFO    MainThread:85518 [wandb_run.py:_on_init():2006] communicating current version
+2023-01-05 16:07:18,320 INFO    MainThread:85518 [wandb_run.py:_on_init():2010] got version response 
+2023-01-05 16:07:18,320 INFO    MainThread:85518 [wandb_init.py:init():728] starting run threads in backend
+2023-01-05 16:07:20,825 INFO    MainThread:85518 [wandb_run.py:_console_start():1986] atexit reg
+2023-01-05 16:07:20,825 INFO    MainThread:85518 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-01-05 16:07:20,825 INFO    MainThread:85518 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-01-05 16:07:20,826 INFO    MainThread:85518 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-01-05 16:07:20,826 INFO    MainThread:85518 [wandb_init.py:init():765] run started, returning control to user process
+2023-01-05 16:07:20,869 INFO    MainThread:85518 [wandb_watch.py:watch():51] Watching
+2023-01-05 16:07:38,060 WARNING MsgRouterThr:85518 [router.py:message_loop():77] message_loop has been closed

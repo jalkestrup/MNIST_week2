@@ -1,0 +1,12 @@
+Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 2, 'seed': 123}
+Epoch: [1/2], Loss: 0.2283
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 81, in train
+    my_table.add_column("image", images)
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/wandb/data_types.py", line 828, in add_column
+    assert isinstance(data, list) or is_np
+AssertionError
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Epoch: [2/2], Loss: 0.0794

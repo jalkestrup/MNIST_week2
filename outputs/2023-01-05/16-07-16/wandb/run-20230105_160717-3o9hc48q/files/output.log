@@ -1,0 +1,46 @@
+[2023-01-05 16:07:20,827][__main__][INFO] - configuration:
+ experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  lr: 0.001
+  n_epochs: 10
+  seed: 123
+wandb:
+  project: oldboys_mnist
+  name: run1
+[2023-01-05 16:07:20,827][__main__][INFO] - Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 10, 'seed': 123}
+{'experiment': {'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 10, 'seed': 123}, 'wandb': {'project': 'oldboys_mnist', 'name': 'run1'}}
+[2023-01-05 16:07:28,869][__main__][INFO] - Epoch [1/10], Loss: 0.2307
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 78, in <module>
+    train()
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/main.py", line 90, in decorated_main
+    _run_hydra(
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/_internal/utils.py", line 219, in run_and_report
+    return func()
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 62, in train
+    optimizer.step()
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/torch/optim/optimizer.py", line 140, in wrapper
+    out = func(*args, **kwargs)
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/torch/optim/optimizer.py", line 23, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/torch/optim/adam.py", line 234, in step
+    adam(params_with_grad,
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/torch/optim/adam.py", line 300, in adam
+    func(params,
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/torch/optim/adam.py", line 356, in _single_tensor_adam
+    if torch.is_complex(param):
+KeyboardInterrupt

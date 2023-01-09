@@ -1,0 +1,11 @@
+Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 1, 'seed': 123}
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 80, in train
+    imagelist = [images[i] for i in range(cfg.experimental['batch_size'])]
+omegaconf.errors.ConfigAttributeError: Key 'experimental' is not in struct
+    full_key: experimental
+    object_type=dict
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Epoch: [1/1], Loss: 0.2329

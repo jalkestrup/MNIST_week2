@@ -1,0 +1,12 @@
+Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 1, 'seed': 123}
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 81, in train
+    my_table.add_column("image", images.numpy().reshape(images.shape[0],28,28)*255)
+  File "/Users/danielsvendsen/miniforge3/envs/mlops02476/lib/python3.9/site-packages/wandb/data_types.py", line 831, in add_column
+    assert is_first_col or len(data) == len(
+AssertionError: Expected length 0, found 16
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Epoch: [1/1], Loss: 0.2327
+(16, 28, 28)

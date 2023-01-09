@@ -1,0 +1,11 @@
+Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 1, 'seed': 123}
+Epoch: [1/1], Loss: 0.2444
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 91, in train
+    log_image_table(images, top_class, labels)
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 75, in log_image_table
+    for img, pred, targ, prob in zip(images.to("cpu"), predicted.to("cpu"), labels.to("cpu"), probs.to("cpu")):
+NameError: name 'probs' is not defined
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

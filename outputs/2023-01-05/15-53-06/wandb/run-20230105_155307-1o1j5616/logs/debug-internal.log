@@ -1,0 +1,149 @@
+2023-01-05 15:53:07,794 INFO    StreamThr :83857 [internal.py:wandb_internal():87] W&B internal server running at pid: 83857, started at: 2023-01-05 15:53:07.792952
+2023-01-05 15:53:07,795 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: status
+2023-01-05 15:53:07,797 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: status
+2023-01-05 15:53:07,798 DEBUG   SenderThread:83857 [sender.py:send():303] send: header
+2023-01-05 15:53:07,798 INFO    WriterThread:83857 [datastore.py:open_for_write():75] open: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/run-1o1j5616.wandb
+2023-01-05 15:53:07,807 DEBUG   SenderThread:83857 [sender.py:send():303] send: run
+2023-01-05 15:53:08,420 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: check_version
+2023-01-05 15:53:08,420 INFO    SenderThread:83857 [dir_watcher.py:__init__():216] watching files in: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files
+2023-01-05 15:53:08,420 INFO    SenderThread:83857 [sender.py:_start_run_threads():928] run started: 1o1j5616 with start time 1672930387.783699
+2023-01-05 15:53:08,420 DEBUG   SenderThread:83857 [sender.py:send():303] send: summary
+2023-01-05 15:53:08,421 INFO    SenderThread:83857 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 15:53:08,421 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: check_version
+2023-01-05 15:53:08,539 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: run_start
+2023-01-05 15:53:08,547 DEBUG   HandlerThread:83857 [system_info.py:__init__():31] System info init
+2023-01-05 15:53:08,547 DEBUG   HandlerThread:83857 [system_info.py:__init__():46] System info init done
+2023-01-05 15:53:08,547 INFO    HandlerThread:83857 [system_monitor.py:start():150] Starting system monitor
+2023-01-05 15:53:08,547 INFO    SystemMonitor:83857 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-05 15:53:08,547 INFO    HandlerThread:83857 [system_monitor.py:probe():171] Collecting system info
+2023-01-05 15:53:08,547 INFO    SystemMonitor:83857 [interfaces.py:start():168] Started cpu
+2023-01-05 15:53:08,548 DEBUG   HandlerThread:83857 [system_info.py:probe():195] Probing system
+2023-01-05 15:53:08,548 INFO    SystemMonitor:83857 [interfaces.py:start():168] Started disk
+2023-01-05 15:53:08,549 INFO    SystemMonitor:83857 [interfaces.py:start():168] Started gpuapple
+2023-01-05 15:53:08,550 INFO    SystemMonitor:83857 [interfaces.py:start():168] Started memory
+2023-01-05 15:53:08,551 INFO    SystemMonitor:83857 [interfaces.py:start():168] Started network
+2023-01-05 15:53:08,554 DEBUG   HandlerThread:83857 [system_info.py:_probe_git():180] Probing git
+2023-01-05 15:53:08,574 DEBUG   HandlerThread:83857 [system_info.py:_probe_git():188] Probing git done
+2023-01-05 15:53:08,574 DEBUG   HandlerThread:83857 [system_info.py:probe():241] Probing system done
+2023-01-05 15:53:08,574 DEBUG   HandlerThread:83857 [system_monitor.py:probe():180] {'os': 'macOS-12.4-arm64-arm-64bit', 'python': '3.9.15', 'heartbeatAt': '2023-01-05T14:53:08.548267', 'startedAt': '2023-01-05T14:53:07.766593', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py', 'codePath': 'src/models/train_model_wandb.py', 'git': {'remote': 'git@github.com:dhsvendsen/DanielsCookieCutterPlayground.git', 'commit': 'aaa86255bcffee087da3bb7ae9dcd78e5ccb46eb'}, 'email': 'd.h.svendsen@gmail.com', 'root': '/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground', 'host': 'daniels-mbp-m1.students.clients.local', 'username': 'danielsvendsen', 'executable': '/Users/danielsvendsen/miniforge3/envs/mlops02476/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'total': 926.3517189025879, 'used': 21.83538055419922}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2023-01-05 15:53:08,574 INFO    HandlerThread:83857 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-05 15:53:08,574 INFO    HandlerThread:83857 [system_monitor.py:probe():184] Publishing system info
+2023-01-05 15:53:08,574 DEBUG   HandlerThread:83857 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-05 15:53:08,575 DEBUG   HandlerThread:83857 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-05 15:53:08,575 DEBUG   HandlerThread:83857 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-05 15:53:09,423 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/requirements.txt
+2023-01-05 15:53:09,423 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-summary.json
+2023-01-05 15:53:09,424 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/conda-environment.yaml
+2023-01-05 15:53:11,030 DEBUG   HandlerThread:83857 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-05 15:53:11,031 INFO    HandlerThread:83857 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-05 15:53:11,078 DEBUG   SenderThread:83857 [sender.py:send():303] send: files
+2023-01-05 15:53:11,078 INFO    SenderThread:83857 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-05 15:53:11,081 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 15:53:11,081 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 15:53:11,294 DEBUG   SenderThread:83857 [sender.py:send():303] send: telemetry
+2023-01-05 15:53:11,295 DEBUG   SenderThread:83857 [sender.py:send():303] send: exit
+2023-01-05 15:53:11,295 INFO    SenderThread:83857 [sender.py:send_exit():442] handling exit code: 1
+2023-01-05 15:53:11,296 INFO    SenderThread:83857 [sender.py:send_exit():444] handling runtime: 2
+2023-01-05 15:53:11,296 INFO    SenderThread:83857 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 15:53:11,296 INFO    SenderThread:83857 [sender.py:send_exit():450] send defer
+2023-01-05 15:53:11,296 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:11,296 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-05 15:53:11,296 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:11,296 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-05 15:53:11,296 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 1
+2023-01-05 15:53:11,297 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:11,297 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-05 15:53:11,297 INFO    HandlerThread:83857 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-05 15:53:11,322 DEBUG   SystemMonitor:83857 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-05 15:53:11,322 DEBUG   SystemMonitor:83857 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-05 15:53:11,322 DEBUG   SystemMonitor:83857 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-05 15:53:11,322 INFO    HandlerThread:83857 [interfaces.py:finish():175] Joined cpu
+2023-01-05 15:53:11,322 INFO    HandlerThread:83857 [interfaces.py:finish():175] Joined disk
+2023-01-05 15:53:11,431 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-summary.json
+2023-01-05 15:53:11,431 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/conda-environment.yaml
+2023-01-05 15:53:11,431 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-metadata.json
+2023-01-05 15:53:11,431 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/output.log
+2023-01-05 15:53:11,794 INFO    HandlerThread:83857 [interfaces.py:finish():175] Joined gpuapple
+2023-01-05 15:53:11,795 INFO    HandlerThread:83857 [interfaces.py:finish():175] Joined memory
+2023-01-05 15:53:11,795 INFO    HandlerThread:83857 [interfaces.py:finish():175] Joined network
+2023-01-05 15:53:11,795 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:11,795 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-05 15:53:11,795 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 2
+2023-01-05 15:53:11,795 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:11,795 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-05 15:53:11,795 DEBUG   SenderThread:83857 [sender.py:send():303] send: telemetry
+2023-01-05 15:53:11,795 DEBUG   SenderThread:83857 [sender.py:send():303] send: stats
+2023-01-05 15:53:11,795 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:11,795 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-05 15:53:11,795 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 3
+2023-01-05 15:53:11,796 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:11,796 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-05 15:53:11,796 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:11,796 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-05 15:53:11,796 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 4
+2023-01-05 15:53:11,796 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:11,796 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-05 15:53:11,796 DEBUG   SenderThread:83857 [sender.py:send():303] send: summary
+2023-01-05 15:53:11,796 INFO    SenderThread:83857 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 15:53:11,796 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:11,796 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-05 15:53:11,796 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 5
+2023-01-05 15:53:11,797 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:11,797 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-05 15:53:11,797 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:11,797 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-05 15:53:11,931 INFO    Thread-16 :83857 [upload_job.py:push():143] Uploaded file /var/folders/48/3tj6jzx15j1838xm7_k5pz_h0000gn/T/tmpht_qtg2rwandb/2s8u375q-wandb-metadata.json
+2023-01-05 15:53:12,129 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 6
+2023-01-05 15:53:12,130 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:12,130 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-05 15:53:12,130 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:12,130 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-05 15:53:12,179 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-05 15:53:12,437 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-summary.json
+2023-01-05 15:53:12,438 INFO    Thread-13 :83857 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/config.yaml
+2023-01-05 15:53:13,312 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 7
+2023-01-05 15:53:13,312 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: poll_exit
+2023-01-05 15:53:13,313 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:13,313 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-05 15:53:13,313 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:13,313 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-05 15:53:13,313 INFO    SenderThread:83857 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-05 15:53:13,439 INFO    SenderThread:83857 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/output.log
+2023-01-05 15:53:13,440 INFO    SenderThread:83857 [dir_watcher.py:finish():392] scan: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files
+2023-01-05 15:53:13,440 INFO    SenderThread:83857 [dir_watcher.py:finish():406] scan save: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/requirements.txt requirements.txt
+2023-01-05 15:53:13,440 INFO    SenderThread:83857 [dir_watcher.py:finish():406] scan save: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/output.log output.log
+2023-01-05 15:53:13,440 INFO    SenderThread:83857 [dir_watcher.py:finish():406] scan save: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/config.yaml config.yaml
+2023-01-05 15:53:13,441 INFO    SenderThread:83857 [dir_watcher.py:finish():406] scan save: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-summary.json wandb-summary.json
+2023-01-05 15:53:13,444 INFO    SenderThread:83857 [dir_watcher.py:finish():406] scan save: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/conda-environment.yaml conda-environment.yaml
+2023-01-05 15:53:13,444 INFO    SenderThread:83857 [dir_watcher.py:finish():406] scan save: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-metadata.json wandb-metadata.json
+2023-01-05 15:53:13,444 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 8
+2023-01-05 15:53:13,446 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:13,446 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-05 15:53:13,447 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:13,447 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-05 15:53:13,447 INFO    SenderThread:83857 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-05 15:53:14,363 INFO    Thread-21 :83857 [upload_job.py:push():143] Uploaded file /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/conda-environment.yaml
+2023-01-05 15:53:14,366 INFO    Thread-18 :83857 [upload_job.py:push():143] Uploaded file /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/output.log
+2023-01-05 15:53:14,415 INFO    Thread-19 :83857 [upload_job.py:push():143] Uploaded file /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/config.yaml
+2023-01-05 15:53:14,416 INFO    Thread-20 :83857 [upload_job.py:push():143] Uploaded file /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/wandb-summary.json
+2023-01-05 15:53:14,417 INFO    Thread-17 :83857 [upload_job.py:push():143] Uploaded file /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/files/requirements.txt
+2023-01-05 15:53:14,622 INFO    Thread-12 :83857 [sender.py:transition_state():463] send defer: 9
+2023-01-05 15:53:14,623 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:14,623 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-05 15:53:14,623 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:14,623 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-05 15:53:14,623 INFO    SenderThread:83857 [file_pusher.py:join():173] waiting for file pusher
+2023-01-05 15:53:14,623 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 10
+2023-01-05 15:53:14,623 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 15:53:14,623 INFO    HandlerThread:83857 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-05 15:53:14,623 DEBUG   SenderThread:83857 [sender.py:send_request():317] send_request: defer
+2023-01-05 15:53:14,623 INFO    SenderThread:83857 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-05 15:53:16,837 WARNING StreamThr :83857 [internal.py:is_dead():386] Internal process exiting, parent pid 83848 disappeared
+2023-01-05 15:53:16,838 ERROR   StreamThr :83857 [internal.py:wandb_internal():146] Internal process shutdown.
+2023-01-05 15:53:17,206 DEBUG   HandlerThread:83857 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 15:53:17,207 INFO    HandlerThread:83857 [handler.py:finish():814] shutting down handler
+2023-01-05 15:53:17,346 INFO    SenderThread:83857 [sender.py:transition_state():463] send defer: 11
+2023-01-05 15:53:17,347 INFO    SenderThread:83857 [sender.py:finish():1331] shutting down sender
+2023-01-05 15:53:17,348 INFO    SenderThread:83857 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-05 15:53:17,348 INFO    SenderThread:83857 [file_pusher.py:join():173] waiting for file pusher
+2023-01-05 15:53:17,821 INFO    WriterThread:83857 [datastore.py:close():279] close: /Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/outputs/2023-01-05/15-53-06/wandb/run-20230105_155307-1o1j5616/run-1o1j5616.wandb

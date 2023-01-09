@@ -1,0 +1,14 @@
+[2023-01-05 15:56:28,799][__main__][INFO] - configuration: 
+ experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  lr: 0.001
+  n_epochs: 10
+  seed: 123
+wandb:
+  project: oldboys_mnist
+  name: run1
+
+[2023-01-05 15:56:28,799][__main__][INFO] - Training day and night

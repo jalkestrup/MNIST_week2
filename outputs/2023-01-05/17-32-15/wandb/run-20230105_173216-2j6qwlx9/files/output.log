@@ -1,0 +1,12 @@
+Training day and night
+{'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 10, 'seed': 123}
+Epoch: [1/10], Loss: 0.2431
+Epoch: [2/10], Loss: 0.0824
+Epoch: [3/10], Loss: 0.0607
+Epoch: [4/10], Loss: 0.0471
+Epoch: [5/10], Loss: 0.0340
+Epoch: [6/10], Loss: 0.0284
+Epoch: [7/10], Loss: 0.0218
+Epoch: [8/10], Loss: 0.0221
+Epoch: [9/10], Loss: 0.0177
+Epoch: [10/10], Loss: 0.0152

@@ -1,0 +1,21 @@
+[2023-01-05 16:06:20,584][__main__][INFO] - configuration:
+ experiment:
+  datapath: ../../../data/processed
+  modelpath: ../../../models
+  reportspath: ../../../reports
+  batch_size: 16
+  lr: 0.001
+  n_epochs: 10
+  seed: 123
+wandb:
+  project: oldboys_mnist
+  name: run1
+[2023-01-05 16:06:20,584][__main__][INFO] - Training day and night
+{'experiment': {'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 10, 'seed': 123}, 'wandb': {'project': 'oldboys_mnist', 'name': 'run1'}}
+{'experiment': {'datapath': '../../../data/processed', 'modelpath': '../../../models', 'reportspath': '../../../reports', 'batch_size': 16, 'lr': 0.001, 'n_epochs': 10, 'seed': 123}, 'wandb': {'project': 'oldboys_mnist', 'name': 'run1'}}
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/Users/danielsvendsen/gitrepos/DanielsCookieCutterPlayground/src/models/train_model_wandb.py", line 37, in train
+    images = torch.unsqueeze(torch.load(f"{wandb.config['datapath']}/train_images.pt"), dim=1)
+KeyError: 'datapath'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
