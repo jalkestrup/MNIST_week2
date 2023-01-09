@@ -22,7 +22,7 @@ def train(lr, epochs):
     print("Training day and night")
     print(lr)
 
-    # TODO: Implement training loop here
+    # Implement training loop here
     # Pytorch train and test sets
     # Model needs shape (n, 1, 28, 28)
     images = torch.unsqueeze(torch.load(f"{main_path}/train_images.pt"), dim=1)
