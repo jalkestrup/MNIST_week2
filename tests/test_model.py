@@ -4,7 +4,7 @@ from tests import _PATH_DATA
 from src.models.model import ConvNet
 import pytest
 
-n = 16
+n = 100
 
 train_images = torch.unsqueeze(
     torch.load(f"{_PATH_DATA}/processed/train_images.pt")[0:n], dim=1
@@ -17,9 +17,11 @@ output = model(train_images)
 def test_output(test_input, expected):
     assert model(train_images[0:test_input]).shape[0] == expected
 
+
 def test_error_on_wrong_shape():
-    with pytest.raises(ValueError, match='Expected input to a 4D tensor'):
-        model(torch.randn(1,2,3))
+    with pytest.raises(ValueError, match="Expected input to a 4D tensor"):
+        model(torch.randn(1, 2, 3))
+
 
 def test_error_on_wrong_shape():
     with pytest.raises(ValueError, match="Expected input to a 4D tensor"):
