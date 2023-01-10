@@ -1,8 +1,5 @@
-import numpy as np
 import torch
 from tests import _PATH_DATA
-from src.models.model import ConvNet
-from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 import pytest
 
