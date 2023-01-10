@@ -1,8 +1,4 @@
 [core]
     remote = remote_storage
-['remote "storage"']
-    url = gdrive://1R8Hic1uoVilS3gS5Blyg9F2j7rhUj8R9
-['remote "remote_storagegs"']
-    url = ../:/dtumlops-storage
 ['remote "remote_storage"']
     url = gs://dtumlops-storage/
