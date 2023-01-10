@@ -10,12 +10,13 @@ import logging
 
 log = logging.getLogger(__name__)
 
+
 @hydra.main(config_path="config", config_name='default_config.yaml')
 def train(config):
     log.info(f"configuration: \n {OmegaConf.to_yaml(config)}")
     hparams = config.experiment
     log.info("Training day and night")
-    
+
     # TODO: Implement training loop here
     # Pytorch train and test sets
     # Model needs shape (n, 1, 28, 28)
@@ -55,6 +56,7 @@ def train(config):
     plt.xlabel("Epoch")
     plt.ylabel("Loss")
     plt.savefig(f"{hparams['reportspath']}/figures/convergence.png", dpi=200)
+
 
 if __name__ == "__main__":
     train()

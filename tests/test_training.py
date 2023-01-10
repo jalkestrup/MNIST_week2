@@ -39,7 +39,10 @@ def test_dataloader_batch_size(test_input, expected):
         # Only check first loop
         break
 
-# In the detox project we use a pytorch ligthning module, which we can use 
-# to do call the loss directly from the model 
+
+# In the detox project we use a pytorch ligthning module, which we can use
+# to do call the loss directly from the model
+
+
 def test_loss():
     assert True

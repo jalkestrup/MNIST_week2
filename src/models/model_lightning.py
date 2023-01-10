@@ -6,6 +6,7 @@ class ConvNet(nn.Module):
     '''
     Convolutional neural network, specifically for fitting MNIST data
     '''
+
     def __init__(self):
         super(ConvNet, self).__init__()
         self.conv1 = nn.Conv2d(1, 16, 5)
